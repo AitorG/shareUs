@@ -1,0 +1,320 @@
+body, html{
+	height: 100%;
+	margin:0;
+
+}
+.background{
+	width:100%;
+	height:100%;
+	position:fixed;
+	opacity:0.2;
+	top:50px;
+	margin:0 auto;
+	background:url('../img/background.jpg') no-repeat;
+	background-size: 100% 100%;
+	overflow:auto;
+	z-index:40;
+
+}
+
+.name{
+	position:absolute;
+	margin:0;
+	top:6px;
+	left:0;
+	font-family: "Arial Black";
+	font-size: 26px;
+	color:white;
+}
+.container{
+	overflow: auto;
+	position:relative;
+	width:100%;
+	height: 100%;
+	margin:0 auto;
+	font-family: Verdana;
+	z-index:50;
+}
+.firstLayer{
+	float:right;
+	margin-top:0px;
+	width:48.5%;
+	min-height:450px;
+	border-left:1px dashed rgb(36,160,205);
+	background:none;
+	font-size: 28px;
+	text-align: left;
+}
+.firstLayer label{
+	position:relative;
+	font-size:20px;
+	width:100%;
+	margin-left:5%;
+	top:25px;
+}
+.firstLayer input{
+	position:relative;
+	width:90%;
+	top:25px;
+	margin:0;
+	padding:10px;
+	margin-left:5%;
+	font-family: Verdana;
+	font-size: 18px;
+	border:1px solid rgb(36,160,205);
+	border-radius:5px;
+}
+.RegSubmit{
+	float:left;
+	margin-left:5%;
+	width:95% !important;
+	height:50px;
+	border:1px solid #F9F9F9 !important;
+	border-radius:5px !important;
+	background-color:rgb(72,179,216);
+	font-size: 28px;
+	font-family: arial;
+	color:white;
+	margin-bottom:40px !important;
+	margin-top:20px !important;
+}
+.RegSubmit:hover{
+	background-color:rgb(36,160,205);
+	cursor: pointer;
+}
+.secondLayer{
+	float:left;
+	margin-top:0px;
+	width:48.5%;
+	height:auto;
+	border:none;
+	font-size: 28px;
+	text-align: left;
+}
+.secondLayer img{
+	max-width: 100%;
+	max-height:450px;
+}
+.firstLayer .hello{
+	margin-left:5%;
+}
+.logger{
+	float:left;
+	margin-left:5%;
+	width:90% !important;
+	height:65px;
+	border:1px solid #F9F9F9 !important;
+	border-radius:5px !important;
+	background-color:rgb(72,179,216);
+	font-size: 28px;
+	font-family: arial;
+	color:white;
+	margin-bottom:40px !important;
+}
+.logger:hover{
+	background-color:rgb(36,160,205);
+	cursor: pointer;
+}
+/* Estilos para el menu superior */
+
+.logMail{
+	position:absolute;
+	top:2px;
+	left:470px
+}
+.logMail label{
+	position:relative;
+	top:0;
+	left:42px;
+	font-family: "lucida grande",Verdana;
+	font-size:12px;
+	color:white;
+}
+.logMail input{
+	position:relative;
+	top:20px;
+	left:0;
+	border:1px solid blue;
+	border-radius:2px;
+	padding:3.5px;
+	width:180px;
+	font-family: "lucida grande",Verdana;
+
+}
+.logPass{
+	position:absolute;
+	top:2px;
+	left:645px
+}
+.logPass label{
+	position:relative;
+	top:0;
+	left:65px;
+	font-family: "lucida grande",Verdana;
+	font-size:12px;
+	color:white;
+}
+.logPass input{
+	position:relative;
+	top:20px;
+	left:0;
+	border:1px solid blue;
+	border-radius:2px;
+	padding:3.5px;
+	width:180px;
+	font-family: "lucida grande",Verdana;
+
+}
+.submit{
+	font-family: "lucida grande",Verdana;
+	position:absolute;
+	top:23px;
+	left:910px;
+	width:60px;
+	height:22px;
+	font-weight: bold;
+	border:1px solid blue;
+	border-radius:2px;
+	background-color: #E9E9E9;
+}
+.submit:hover{
+	background-color:rgb(36,160,205);
+	cursor:pointer;
+}
+
+#warning{
+	position:absolute;
+	top:-200px;
+	left:35%;
+	width:400px;
+	height:100px;
+	border:1px solid rgb(36,160,205);
+	border-radius: 5px;
+	z-index:99;
+	background-color:rgba(250,250,250,0.98);
+	display:none;
+	transition:all ease 1s;
+}
+#warningOk{
+	position:absolute;
+	bottom:10px;
+	left:38%;
+	width:100px;
+	height:30px;
+	background-color:rgb(72,179,216);
+	border:none;
+	border-radius:2px;
+	font-size:15px;
+
+}
+#warningOk:hover{
+	background-color: rgb(36,160,205);
+	cursor: pointer;
+}
+#doNotTouch , #doNotTouchMessage, #doNotTouchProfile{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:black;
+	width:100%;
+	height:100%;
+	z-index:97;
+	opacity:0.7;
+	display:none;
+}
+
+#warningText{
+	position:relative;
+	top:5px;
+	margin-left:10px;
+	margin-right:10px;
+	text-align: center;
+	font-family: "lucida grande",Verdana;
+	font-size:16px;
+}
+
+#warningCancel{
+	position:absolute;
+	bottom:10px;
+	left:15px;
+	width:100px;
+	height:30px;
+	background-color:#d9534f;
+	border:none;
+	border-radius:2px;
+	display:none;
+	font-size:15px;
+
+}
+#warningCancel:hover{
+	background-color: #ea645f;
+	cursor: pointer;
+}
+
+#messages{
+	position:absolute;
+	top:100px;
+	left:32%;
+	width:500px;
+	height:300px;
+	border:1px solid rgba(72,179,216,0.3);
+	border-radius:5px;
+	background-color: rgba(67,140,210,0.9);
+	display:none;
+	z-index: 98;
+}
+#messages img{
+	position:absolute;
+	width:40px;
+	height:40px;
+	margin:0;
+	top:15px;
+	left:450px;
+}
+#messages img:hover{
+	cursor: pointer;
+}
+#messageBody{
+	position:relative;
+	top:30px;
+	left:10px;
+	width:90%;
+	margin-left:5px;
+	height:150px;
+	resize:none;
+	border:1px solid rgba(72,179,216,1) ;
+	border-radius:5px;
+	font-family: "lucida grande",Verdana;
+	padding:10px;
+	font-size:15px !important;
+}
+#messageUserMail{
+	position:relative;
+	top:13px;
+	left:10px;
+	width:405px;
+	margin-left:5px;
+	height:20px;
+	resize:none;
+	border:1px solid rgba(72,179,216,1) ;
+	border-radius:5px;
+	font-family: "lucida grande",Verdana;
+	padding:10px;
+	font-size:15px !important;
+}
+#submitMessage{
+	position:relative;
+	top:40px;
+	left:345px;
+	border:none;
+	border-radius:5px;
+	width:140px;
+	height:30px;
+	font-size:15px !important;
+	font-family: "lucida grande",Verdana;
+	background-color: #F0F0F0;
+}
+#submitMessage:hover{
+	cursor: pointer;
+	background-color: #E0E0E0;
+}

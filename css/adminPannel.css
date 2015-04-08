@@ -1,0 +1,49 @@
+.topics img{
+	max-width:80px;
+}
+table{
+	margin-top:40px;
+	width:100%;
+	border-collapse: collapse;
+	background: rgba(255,255,255,0.8);
+	border:1px solid rgba(200,200,200,0.3);
+	font-family: "lucida grande",Verdana;
+	font-size: 16px;
+}
+td{
+	border-bottom: 1px solid #c0c0c0;
+	padding:10px;
+	border-right:none;
+	border-left:none;
+	border-top:none;
+	text-align: center;
+}
+th{
+	border-bottom:1px solid black;
+	padding:10px;
+	border-right:none;
+	border-left:none;
+	border-top:none;
+	text-align: center;
+}
+.actived{
+	font-weight: bold;
+	color:#5cb85c;
+}
+.activedad{
+	font-weight: bold;
+	color:#5cb85c;
+}
+.activedad:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.noActived{
+	font-weight: bold;
+	color:#d9534f;
+}
+
+.noActived:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}

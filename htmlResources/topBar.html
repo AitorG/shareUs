@@ -1,0 +1,19 @@
+<div class="topBar" id="topBar">
+	<p class="name">ShareUs</p>
+	<ul class="topList">
+		<li onclick="checkSession();">Home</li>
+		<li onclick="loadMessagesPage();">Messages</li>
+		<li onclick="loadFriendsPage();">Friends</li>
+		<li id="user">
+			
+		</li>
+		<li id="pannelAdminButton" onclick="adminPannel();" >Admin pannel<img id="adminImage" src="img/tools.png" title="admin tools" /></li>
+	</ul>
+	<ul id="userTools" onmouseover="showUserOptions();" onmouseleave="hideUserOptions();">
+				<li onclick="showProfile();">Edit profile<hr/></li>
+
+				<li onclick="leaveShareUs();">Leave ShareUs</li>
+				
+	</ul>
+		
+</div>

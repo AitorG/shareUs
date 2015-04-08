@@ -1,0 +1,15 @@
+<div id="messagesMenu">
+	<button onclick="showSendMessage('no')"><img src="img/mailWhite.png" alt="new mail" title="new mail" />New . . . </button>
+	<div class="selectMails">
+		<div id="sa" onclick="messageFocus(1);">Inbox</div>
+		<div id="se" onclick="messageFocus(2);">Sent</div>
+	</div>
+	<button class="orderBy" onclick="changeOrder();">
+	<span id="valueOrder">Sorted by Date</span>
+	<input type="hidden" style="display:none;" value="Date" id="orderBy">
+	<input type="hidden" style="display:none;" value="inbox" id="req">
+	</button>
+</div>
+<div id="loadMessagesHere">
+	
+</div>

@@ -1,0 +1,115 @@
+.topBarColor{
+	width:100%;
+	height:50px;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color: rgb(47,120,190);
+	z-index:70;
+	border-bottom:1px solid #c0c0c0;
+}
+
+.topBar{
+	position:relative;
+	top:0 !important;
+	left:0;
+	margin:0 auto;
+	padding:0;
+	width:980px;
+	height:50px;
+	background-color: rgb(47,120,190);
+	z-index:71;
+}
+.topBar  ul{
+	margin:0;
+	position:absolute;
+	top:0px;
+	left:100px;
+
+}
+.topBar ul  li{
+	float:left;
+	color:white;
+	width:auto;
+	height:20px;
+	padding:15px 20px 15px 20px;
+	margin-left:5px;
+	list-style: none;
+	transition:all ease 0.25s;
+
+
+}
+.topBar ul li:hover{
+	background-color:rgb(37,100,170);
+	cursor: pointer;
+}
+
+#user{
+	position:relative;
+	top:7px;
+	left:0px;
+	width:522px;
+	padding:0;
+	margin:0;
+	text-decoration: underline;
+}
+#user span{
+	float:right;
+	text-align: right;
+	padding:8px 13px 8px 13px;;
+}
+
+.userTool{
+	float:right;
+	margin-left:10px;
+	margin-top:6px;
+	margin-right:0;
+	width:15px;
+	height:10px;
+}
+#userTools{
+	position:absolute;
+	top:43px;
+	left:830px;
+	width:150px;
+	font-size: 13px;
+	background-color:rgb(47,120,190);
+	z-index:99;
+	padding:0;
+	padding-top:10px;
+	display:none;
+	
+}
+#userTools li{
+	margin-left:0;
+	padding:5px;
+	padding-left:10px;
+	margin-bottom:8px;
+	width:135px;
+}
+#userTools hr{
+	position:absolute;
+	top:36px;
+	left:0;
+	width:100%;
+	color:white;
+}
+#user:hover{
+	background-color: rgb(47,120,190);
+}
+
+#pannelAdminButton{
+	position:absolute;
+	top:0;
+	left:360px;
+	display:none;
+	z-index: 80;
+}
+#pannelAdminButton img{
+	float:right;
+	width:35px;
+	margin-top:-11px;
+	margin-left:9px;
+}
+
+

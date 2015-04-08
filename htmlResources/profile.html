@@ -1,0 +1,10 @@
+<h1>Edit your profile:</h1>
+<img src="img/closeWhite.png" title="Close Profile" onclick="hideShowProfile();" />
+<form action="" method="post" id="formChangesProfile" onsubmit="return applyChangesProfile()">
+	<input type="email" name="profileemail" placeholder="email ... " id="profileemail" required="required" value="" readonly="readonly" />
+	<input type="text" name="profilename" placeholder="Type your name ..." id="profilename" required="required" value="" readonly="readonly" />
+	<input type="text" name="profilelastNames" placeholder="Type your last names ..." id="profilelastNames" required="required" value="" readonly="readonly" />
+	
+	<input tpye="button" id="buttonEditProfile" onclick="allowEditProfile()" value="Allow edit">
+	<input type="submit" id="sendProfile" name="sendProfile" value="Apply changes" />
+</form>
